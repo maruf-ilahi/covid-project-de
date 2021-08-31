@@ -7,15 +7,15 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "covid-project-adf-9955"
 		},
-		"ls_covid_blob_connectionString": {
+		"ls_covid_source_blob_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ls_covid_blob'"
+			"metadata": "Secure string for 'connectionString' of 'ls_covid_source_blob'"
 		},
-		"ls_covid_adls_accountKey": {
+		"ls_covid_target_adls_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ls_covid_adls'"
+			"metadata": "Secure string for 'accountKey' of 'ls_covid_target_adls'"
 		},
-		"ls_covid_adls_properties_typeProperties_url": {
+		"ls_covid_target_adls_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://covidadlssa.dfs.core.windows.net"
 		},
@@ -46,14 +46,14 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ls_covid_blob_connectionString": {
-						"value": "[parameters('ls_covid_blob_connectionString')]"
+					"ls_covid_source_blob_connectionString": {
+						"value": "[parameters('ls_covid_source_blob_connectionString')]"
 					},
-					"ls_covid_adls_accountKey": {
-						"value": "[parameters('ls_covid_adls_accountKey')]"
+					"ls_covid_target_adls_accountKey": {
+						"value": "[parameters('ls_covid_target_adls_accountKey')]"
 					},
-					"ls_covid_adls_properties_typeProperties_url": {
-						"value": "[parameters('ls_covid_adls_properties_typeProperties_url')]"
+					"ls_covid_target_adls_properties_typeProperties_url": {
+						"value": "[parameters('ls_covid_target_adls_properties_typeProperties_url')]"
 					}
 				}
 			},

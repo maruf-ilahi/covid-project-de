@@ -5,13 +5,13 @@
 		"factoryName": {
 			"value": "covid-project-adf-9955"
 		},
-		"ls_covid_blob_connectionString": {
+		"ls_covid_source_blob_connectionString": {
 			"value": ""
 		},
-		"ls_covid_adls_accountKey": {
+		"ls_covid_target_adls_accountKey": {
 			"value": ""
 		},
-		"ls_covid_adls_properties_typeProperties_url": {
+		"ls_covid_target_adls_properties_typeProperties_url": {
 			"value": "https://covidadlssa.dfs.core.windows.net"
 		}
 	}
